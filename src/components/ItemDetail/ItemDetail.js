@@ -9,9 +9,9 @@ const ItemDetail = ( {id, name, stock, category, img, desc, price} ) => {
     }
 
     return (
-        <div>
+        <div className="Itemcard">
         <div className="card">
-        <img src={img} className="card-img-top" alt="..."/>
+        <img src={img} className="img-fluid" alt="..."/>
         <div className="card-body">
             <h5 className="card-title">{desc}</h5>
             <p className="card-text">precio:{price}</p>

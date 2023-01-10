@@ -5,13 +5,10 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import Prueba from './clase9/Clase9'
 function App() {
-
   return (
-
     <BrowserRouter>
 
       <Navbar />
-
       <Routes>
         <Route path="/" element={ <ItemListContainer /> }/>
         <Route path="/productos/:categoryId" element={ <ItemListContainer /> }/>
