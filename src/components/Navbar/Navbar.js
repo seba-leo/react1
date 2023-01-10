@@ -21,9 +21,6 @@ export const Navbar = () => {
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page"to="/productos/Camiseta">Camiseta</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">Link</Link>
-              </li>
               <li className="nav-item dropdown">
               </li>
             </ul>
