@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import './ItemDetail.scss'
-const ItemDetail = ( {id, name, stock, category, img, desc, price} ) => {
+const ItemDetail = ( {category, img, desc, price} ) => {
 
     const navigate = useNavigate()
 
