@@ -3,6 +3,7 @@
         "id": 1,
         "desc": "camiseta de la seleccion de España",
         "price": 60,
+        "stock":20,
         "category":"Camiseta",
         "img":"https://store.fifa.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0615%2F4456%2F2874%2Fproducts%2FFIFAMZ0003_1.jpg%3Fv%3D1665067262&w=1920&q=50"
     },
@@ -10,6 +11,7 @@
         "id": 2,
         "desc": "camiseta de la seleccion de Argetina",
         "price": 60,
+        "stock":20,
         "category":"Camiseta",
         "img": "https://store.fifa.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0615%2F4456%2F2874%2Fproducts%2FFIFAMZ0005_1.jpg%3Fv%3D1665067307&w=640&q=50"
     },
@@ -17,6 +19,7 @@
         "id": 3,
         "desc": "camiseta de la seleccion de Alemania",
         "price": 60,
+        "stock":20,
         "category":"Camiseta",
         "img": "https://store.fifa.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0615%2F4456%2F2874%2Fproducts%2FFIFAMZ0023_1.jpg%3Fv%3D1665067065&w=640&q=50"
     },
@@ -24,6 +27,7 @@
         "id": 4,
         "desc": "camiseta de la seleccion de Belgica",
         "price": 60,
+        "stock":20,
         "category":"Camiseta",
         "img": "https://store.fifa.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0615%2F4456%2F2874%2Fproducts%2FFIFAMZ000703_1.jpg%3Fv%3D1668793158&w=640&q=50"
     },
@@ -31,6 +35,7 @@
         "id": 5,
         "desc": "camiseta de la seleccion de Japon",
         "price": 60,
+        "stock":20,
         "category":"Camiseta",
         "img": "https://store.fifa.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0615%2F4456%2F2874%2Fproducts%2FFIFAMZ001203_1.jpg%3Fv%3D1668793323&w=640&q=50"
     },
@@ -38,6 +43,7 @@
         "id": 6,
         "desc": "camiseta de la seleccion de Colombia",
         "price": 60,
+        "stock":20,
         "category":"Camiseta",
         "img": "https://store.fifa.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0615%2F4456%2F2874%2Fproducts%2FFIFAMT001103_1.jpg%3Fv%3D1672931904&w=640&q=50"
     },
@@ -45,6 +51,7 @@
         "id": 7,
         "desc": "camiseta de la seleccion de Suecia",
         "price": 60,
+        "stock":20,
         "category":"Camiseta",
         "img": "https://store.fifa.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0615%2F4456%2F2874%2Fproducts%2FFIFAYZ001614_1.jpg%3Fv%3D1668692272&w=640&q=50"
     },
@@ -52,6 +59,7 @@
         "id": 8,
         "desc": "camiseta de la seleccion de Brasil",
         "price": 60,
+        "stock":20,
         "category":"Camiseta",
         "img": "https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw06873613/products/NI_AJ4390-749/NI_AJ4390-749-1.JPG"
     },
@@ -59,6 +67,7 @@
         "id": 9,
         "desc": "camiseta de la seleccion de Estados Unidos",
         "price": 60,
+        "stock":20,
         "category":"Camiseta",
         "img": "https://store.fifa.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0615%2F4456%2F2874%2Fproducts%2FNewUSFront.png%3Fv%3D1669215636&w=640&q=50"
     },
@@ -66,6 +75,7 @@
         "id": 10,
         "desc": "camiseta de la seleccion de Francia",
         "price": 60,
+        "stock":20,
         "category":"Camiseta",
         "img": "https://i.ebayimg.com/images/g/O2IAAOSwEh1jlXbt/s-l500.jpg"
     },
@@ -73,6 +83,7 @@
         "id": 11,
         "desc": "camiseta de la seleccion de Inglaterra",
         "price": 60,
+        "stock":20,
         "category":"Camiseta",
         "img": "https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw137a6489/products/NI_DN0687-100/NI_DN0687-100-1.JPG"
     },
@@ -80,22 +91,73 @@
         "id": 12,
         "desc": "botines adiddas new age",
         "price": 60,
+        "stock":20,
         "category": "botines",
         "img": "https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw5279fa7a/products/NI_DB2857-506/NI_DB2857-506-1.JPG"
     
     },{
         "id": 13,
-        "desc": "botines adiddas new age",
+        "desc": "NEW BALANCE TEKELA V4 PRO WIDE FG SOCCER CLEATS",
         "price": 60,
+        "stock":20,
         "category": "botines",
-        "img": "https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw5279fa7a/products/NI_DB2857-506/NI_DB2857-506-1.JPG"
+        "img": "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=600&h=600&cmp=100&c=999&img=A1069348000&iset=0108&iindex=0088&retBlank=1x1&bg=f2f2f2"
     
     },{
         "id": 14,
-        "desc": "botines adiddas new age",
+        "desc": "NIKE MERCURIAL SUPERFLY 9 ACADEMY FG CLEATS (GENERATION PACK)",
         "price": 60,
+        "stock":20,
         "category": "botines",
-        "img": "https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw5279fa7a/products/NI_DB2857-506/NI_DB2857-506-1.JPG"
+        "img": "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=600&h=600&cmp=100&c=999&img=A1074049000&iset=0108&iindex=0088&retBlank=1x1&bg=f2f2f2"
+    
+    },{
+        "id": 15,
+        "desc": "PUMA ULTRA ULTIMATE FG/AG SOCCER CLEAT",
+        "price": 60,
+        "stock":20,
+        "category": "botines",
+        "img": "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=600&h=600&cmp=100&c=999&img=A1068351000&iset=0108&iindex=0088&retBlank=1x1&bg=f2f2f2"
+    
+    },{
+        "id": 16,
+        "desc": "PUMA ULTRA 1.4 FIRST MILE FG/AG SOCCER CLEATS",
+        "price": 60,
+        "stock":20,
+        "category": "botines",
+        "img":"https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=600&h=600&cmp=100&c=999&img=A1062871000&iset=0108&iindex=0088&retBlank=1x1&bg=f2f2f2"
+    
+    },{
+        "id": 17,
+        "desc": "ADIDAS FIFA WORLD CUP™ AL RIHLA PRO OFFICIAL MATCH SOCCER BALL V1",
+        "price": 60,
+        "stock":20,
+        "category": "Balones",
+        "img": "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=300&h=300&cmp=100&c=999&img=A1064002000&iset=0108&iindex=0062"
+    
+    },{
+        "id": 18,
+        "desc": "ADIDAS FIFA WORLD CUP™ AL RIHLA CLUB OFFICIAL MATCH SOCCER BALL V2",
+        "price": 60,
+        "stock":20,
+        "category": "Balones",
+        "img": "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=300&h=300&cmp=100&c=999&img=A1064012000&iset=0108&iindex=0062"
+    
+    },{
+        "id": 19,
+        "desc": "ADIDAS FIFA WORLD CUP™ AL RIHLA PRO OFFICIAL MATCH SOCCER BALL v3",
+        "price": 60,
+        "stock":20,
+        "category": "Balones",
+        "img": "https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=300&h=300&cmp=100&c=999&img=A1063990000&iset=0108&iindex=0062"
+    
+    },{
+        "id": 20,
+        "desc": "ADIDAS PREDATOR EDGE.1 SG CLEATS (SHADOW PORTAL PACK) ",
+        "price": 60,
+        "stock":20,
+        "category": "botines",
+        "img":"https://www.imagehandler.net/preview/?istyle=0000&fmt=jpg&w=600&h=600&cmp=100&c=999&img=A1067299000&iset=0108&iindex=0088&retBlank=1x1&bg=f2f2f2"
     
     }
 ]

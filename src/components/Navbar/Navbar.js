@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import {CartWidget} from '../Widget/CartWidget'
-
+import { useLoginContext } from '../../context/LoginContext'
 export const Navbar = () => {
-
+const {user,logout}=useLoginContext()
     return (
         <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
@@ -20,6 +20,9 @@ export const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page"to="/productos/Camiseta">Camiseta</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page"to="/productos/Balones">Balones</Link>
               </li>
               <li className="nav-item dropdown">
               </li>

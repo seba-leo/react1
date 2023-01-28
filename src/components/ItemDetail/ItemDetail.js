@@ -1,11 +1,32 @@
-import { useNavigate } from "react-router-dom"
+import { useContext } from "react"
+import { Link, useNavigate } from "react-router-dom"
+import { CartContext } from "../../context/CartContext"
+import ItemCount from "../ItemCount/ItemCount"
 import './ItemDetail.scss'
-const ItemDetail = ( {category, img, desc, price} ) => {
+import {useState} from 'react'
+const ItemDetail = ( {category, img, desc, price,id,stock} ) => {
 
     const navigate = useNavigate()
 
     const handleVolver = () => {
         navigate(-1)
+    }
+    const [cantidad, setCantidad] = useState(1)
+
+
+    const {Agregar,isInCart}=useContext(CartContext)
+
+    console.log(isInCart(id))
+    const AgregarCarrito=()=>{
+        const item={
+            category,
+            img,
+            desc,
+            price,
+            id,
+            cantidad
+        }
+ Agregar(item)
     }
 
     return (
@@ -17,6 +38,16 @@ const ItemDetail = ( {category, img, desc, price} ) => {
             <p className="card-text">precio:{price}</p>
             <small>categoria: {category}</small>
             <button className="btn btn-primary" onClick={handleVolver}>Volver</button>
+            {
+                !isInCart(id)
+                    ? <ItemCount 
+                            cantidad={cantidad}
+                            setCantidad={setCantidad}
+                            max={stock}
+                            onAdd={AgregarCarrito}
+                        />
+                        : <Link to="/cart" className="btn btn-success">Terminar mi compra</Link>
+                    }
         </div>
         </div>
 
