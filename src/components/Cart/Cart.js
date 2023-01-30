@@ -26,7 +26,8 @@ const Cart = () => {
 
                 {
                     cart.map(item => (
-                        <div key={item.img}>
+                        <div key={item.id}>
+                            <img src={item.img}/>
                             <h4>{item.desc}</h4>
                             <p>Cantidad: {item.cantidad}</p>
                             <p>Precio: ${item.price * item.cantidad}</p>
@@ -39,6 +40,7 @@ const Cart = () => {
                 <h4>Total: ${ totalCart() }</h4>
             
             <button className="btn btn-danger" onClick={emptycart}>Vaciar carrito</button>
+            <Link className="btn btn-success mx-2" to="/checkout">Terminar mi compra</Link>
         </div>
     )
 }

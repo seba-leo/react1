@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
 import {CartWidget} from '../Widget/CartWidget'
 import { useLoginContext } from '../../context/LoginContext'
+
+
 export const Navbar = () => {
 const {user,logout}=useLoginContext()
     return (
         <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
-        <CartWidget/>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -24,13 +25,17 @@ const {user,logout}=useLoginContext()
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page"to="/productos/Balones">Balones</Link>
               </li>
-              <li className="nav-item dropdown">
+              <li className="nav-item">
+              <Link className="nav-link active" to="/contacto">Contacto</Link>
               </li>
-            </ul>
-            <div className='header__container'>
+              <li className="nav-item">
+              <div className='header__container'>
                 <p>Bienvenido: {user.email}</p>
                 <button className='btn btn-danger' onClick={logout}>Logout</button>
             </div>
+              </li>
+            </ul>
+            <CartWidget/>
           </div>
         </div>
       </nav>
