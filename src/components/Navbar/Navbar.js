@@ -27,8 +27,13 @@ const {user,logout}=useLoginContext()
               <li className="nav-item dropdown">
               </li>
             </ul>
+            <div className='header__container'>
+                <p>Bienvenido: {user.email}</p>
+                <button className='btn btn-danger' onClick={logout}>Logout</button>
+            </div>
           </div>
         </div>
       </nav>
+      
     )
 }

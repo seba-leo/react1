@@ -21,7 +21,6 @@ const Checkout = () => {
         
         const orden = {
             cliente: values,
-
             items: cart,
             total: totalCart()
         }
@@ -144,4 +143,3 @@ const Checkout = () => {
 }
 
 export default Checkout
-

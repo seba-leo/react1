@@ -12,7 +12,7 @@ const init = JSON.parse(localStorage.getItem('cart')) || []
 export const CartProvider = ({children}) => {
     const [cart, setCart] = useState(init)
 
-    const agregarAlCarrito = (item) => {
+    const Agregar = (item) => {
       setCart([...cart, item])
     }
   
@@ -43,7 +43,7 @@ export const CartProvider = ({children}) => {
     return (
         <CartContext.Provider value={{
             cart,
-            agregarAlCarrito,
+            Agregar,
             removerItem,
             isInCart,
             emptycart,

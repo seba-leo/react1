@@ -1,4 +1,4 @@
-import stockproduct from '../components/products/stockproduct.json'
+import stockproduct from '../products/stockproduct.json'
 
 export const pedirDatos = () => {
     return new Promise((resolve, reject) => {

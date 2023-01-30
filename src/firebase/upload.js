@@ -1,4 +1,4 @@
-import stockproduct from '../components/products/stockproduct.json' assert { type: "json" }
+import stockproduct from '../products/stockproduct.json'assert { type: "json" }
 import { db } from './config.js'
 import { collection, addDoc } from 'firebase/firestore'
 

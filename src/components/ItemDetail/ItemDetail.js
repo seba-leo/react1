@@ -1,9 +1,10 @@
-import { useContext } from "react"
 import { Link, useNavigate } from "react-router-dom"
-import { CartContext } from "../../context/CartContext"
+import { useCartContext } from "../../context/CartContext"
 import ItemCount from "../ItemCount/ItemCount"
 import './ItemDetail.scss'
 import {useState} from 'react'
+
+
 const ItemDetail = ( {category, img, desc, price,id,stock} ) => {
 
     const navigate = useNavigate()
@@ -14,9 +15,9 @@ const ItemDetail = ( {category, img, desc, price,id,stock} ) => {
     const [cantidad, setCantidad] = useState(1)
 
 
-    const {Agregar,isInCart}=useContext(CartContext)
+    const {Agregar,isInCart}=useCartContext()
 
-    console.log(isInCart(id))
+
     const AgregarCarrito=()=>{
         const item={
             category,
@@ -39,17 +40,19 @@ const ItemDetail = ( {category, img, desc, price,id,stock} ) => {
             <small>categoria: {category}</small>
             <button className="btn btn-primary" onClick={handleVolver}>Volver</button>
             {
-                !isInCart(id)
-                    ? <ItemCount 
-                            cantidad={cantidad}
-                            setCantidad={setCantidad}
-                            max={stock}
-                            onAdd={AgregarCarrito}
-                        />
-                        : <Link to="/cart" className="btn btn-success">Terminar mi compra</Link>
-                    }
+ !isInCart(id)
+ ? <ItemCount 
+         cantidad={cantidad}
+         setCantidad={setCantidad}
+         max={stock}
+         onAdd={AgregarCarrito}
+     />
+ : <Link to="/cart" className="btn btn-success">Terminar mi compra</Link>
+}
+
         </div>
         </div>
+        <button className="btn btn-primary" onClick={handleVolver}>Volver</button>
 
             {/* <ItemCount max={stock}/> */}
         </div>
