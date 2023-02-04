@@ -1,5 +1,5 @@
 import './footer.scss'
-export const Footer=()=>{
+ const Footer=()=>{
     return(
         <div>
             <Footer>
@@ -8,3 +8,5 @@ export const Footer=()=>{
         </div>
     )
 }
+
+export default Footer
