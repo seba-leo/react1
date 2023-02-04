@@ -46,7 +46,7 @@ const LoginScreen = () => {
                 </form>
                 <button className='btn btn-primary my-2' onClick={googleLogin}>Ingresar con google</button>
                 <br/>
-                <Link to="/register">Registrarme</Link>
+                <Link to="/registrer">Registrarme</Link>
             </div>
         </div>
     )

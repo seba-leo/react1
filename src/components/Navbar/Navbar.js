@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import {CartWidget} from '../Widget/CartWidget'
 import { useLoginContext } from '../../context/LoginContext'
+import './Navbar.scss'
 
 
 export const Navbar = () => {

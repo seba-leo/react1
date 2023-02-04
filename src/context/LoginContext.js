@@ -8,7 +8,7 @@ export const useLoginContext = () => {
     return useContext(LoginContext)
 }
 
-export const LoginProvider = ({children}) => {
+export const LoginProvider = ({ children }) => {
     const [loading, setLoading] = useState(false)
     const [user, setUser] = useState({
         email: null,
@@ -25,7 +25,7 @@ export const LoginProvider = ({children}) => {
                     logged: false,
                     error: error.message
                 })
-            })  
+            })
     }
 
     const login = (values) => {
@@ -52,7 +52,7 @@ export const LoginProvider = ({children}) => {
                     error: null
                 })
             })
-        
+
     }
 
     const register = (values) => {
@@ -82,10 +82,10 @@ export const LoginProvider = ({children}) => {
                 logout()
             }
         })
-    }, []) 
+    }, [])
 
     return (
-        <LoginContext.Provider value={{googleLogin, user, login, logout, loading, register}}>
+        <LoginContext.Provider value={{ googleLogin, user, login, logout, loading, register }}>
             {children}
         </LoginContext.Provider>
     )

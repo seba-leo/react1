@@ -4,7 +4,8 @@ import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
 import { collection, getDocs, query, where } from "firebase/firestore"
 import { db } from "../../firebase/config"
-
+import {Carusel} from '../carusel/Carusel'
+import'./ILContainer.scss'
 const ItemListContainer = () => {
 
     
@@ -41,6 +42,9 @@ const ItemListContainer = () => {
 
     return (
         <div>
+            <Carusel/>
+            <br/>
+            <h1 className="h1">Nuestros productos</h1>
             {
                 loading
                     ? <h2>Cargando...</h2>
