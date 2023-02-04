@@ -11,9 +11,9 @@ const Cart = () => {
     if (cart.length === 0) {
         return (
             <div className="container my-5">
-                <h2>Tu carrito está vacío</h2>
+                <h2>Aun no compraste nada</h2>
                 <hr/>
-                <p>Andá a comprar algo</p>
+                <p>Aquí apareceran tus compras</p>
                 <Link to="/" className="btn btn-primary">Volver</Link>
             </div>
         )
@@ -21,9 +21,8 @@ const Cart = () => {
 
     return (
         <div className="container my-5">
-            <h2>Tu compra</h2>
+            <h2>Compra total</h2>
                 <hr/>
-
                 {
                     cart.map(item => (
                         <div key={item.id}>

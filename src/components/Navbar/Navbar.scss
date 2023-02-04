@@ -1,3 +1,10 @@
-.nav-item a{
+.nav-item a {
     font-size: 25px;
+}
+
+ul {
+    li {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }

@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import { doc, getDoc } from "firebase/firestore"
 import { db } from "../../firebase/config"
+import { useEffect, useState } from "react"
+import { useParams } from "react-router-dom"
 
 const ItemDetailContainer = () => {
 
@@ -10,12 +10,10 @@ const ItemDetailContainer = () => {
     const { itemId } = useParams()
 
     useEffect(() => {
-       // ref
         const docRef = doc(db, "productos", itemId)
-       // peticion async
         getDoc(docRef)
             .then(doc => {
-                setItem( {...doc.data(), id: doc.id} )
+                setItem({ ...doc.data(), id: doc.id })
             })
 
     }, [itemId])
@@ -23,7 +21,7 @@ const ItemDetailContainer = () => {
     return (
         <div className="container my-5">
             {
-                item && <ItemDetail {...item}/>
+                item && <ItemDetail {...item} />
             }
         </div>
     )

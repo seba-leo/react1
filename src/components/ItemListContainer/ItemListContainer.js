@@ -41,10 +41,11 @@ const ItemListContainer = () => {
 
 
     return (
-        <div>
+        <div className="Container">
             <Carusel/>
             <br/>
             <h1 className="h1">Nuestros productos</h1>
+            <hr />
             {
                 loading
                     ? <h2>Cargando...</h2>

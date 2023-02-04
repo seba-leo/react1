@@ -18,7 +18,7 @@ const Checkout = () => {
     const [orderId, setOrderId] = useState(null)
 
     const createOrder = async (values) => {
-        
+
         const orden = {
             cliente: values,
             items: cart,
@@ -28,23 +28,23 @@ const Checkout = () => {
         const batch = writeBatch(db)
         const ordersRef = collection(db, 'orders')
         const productosRef = collection(db, 'productos')
-        
-        const outOfStock = []
-        
-        const itemsRef = query( productosRef, where( documentId(), 'in', cart.map(prod => prod.id) ) )
-  
-        const productos = await getDocs(itemsRef)
-        
-        productos.docs.forEach(doc => {
-                const item = cart.find(item => item.id === doc.id)
 
-                if (doc.data().stock >= item.cantidad) {
-                    batch.update(doc.ref, {
-                        stock: doc.data().stock - item.cantidad
-                    })
-                } else {
-                    outOfStock.push(item)
-                }
+        const outOfStock = []
+
+        const itemsRef = query(productosRef, where(documentId(), 'in', cart.map(prod => prod.id)))
+
+        const productos = await getDocs(itemsRef)
+
+        productos.docs.forEach(doc => {
+            const item = cart.find(item => item.id === doc.id)
+
+            if (doc.data().stock >= item.cantidad) {
+                batch.update(doc.ref, {
+                    stock: doc.data().stock - item.cantidad
+                })
+            } else {
+                outOfStock.push(item)
+            }
         })
 
         if (outOfStock.length === 0) {
@@ -55,20 +55,19 @@ const Checkout = () => {
                             setOrderId(doc.id)
                             emptycart()
                         })
-                        .catch((error) => console.log(error) )
+                        .catch((error) => console.log(error))
                 })
         } else {
             alert("Hay items sin stock")
         }
-        
-    }
 
+    }
 
     if (orderId) {
         return (
             <div className="container my-5">
                 <h2>Tu compra ha sido exitosa</h2>
-                <hr/>
+                <hr />
                 <p>Tu código de orden es: {orderId}</p>
 
                 <Link to="/">Volver</Link>
@@ -77,13 +76,13 @@ const Checkout = () => {
     }
 
     if (cart.length === 0) {
-        return <Navigate to="/"/>
+        return <Navigate to="/" />
     }
 
     return (
         <div className="container my-5">
             <h2>Terminar mi compra</h2>
-            <hr/>
+            <hr />
 
             <Formik
                 initialValues={{
@@ -136,8 +135,8 @@ const Checkout = () => {
                 )}
             </Formik>
 
-            
-            
+
+
         </div>
     )
 }

@@ -14,6 +14,7 @@ const {user,logout}=useLoginContext()
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <h1>TodoFutbol</h1>
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/">inicio</Link>
               </li>
