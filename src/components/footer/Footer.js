@@ -1,12 +1,10 @@
 import './footer.scss'
- const Footer=()=>{
-    return(
-        <div>
-            <Footer>
-                Todos los derechos Reservados
-            </Footer>
+
+export const Footer = () => {
+    return (
+        <div className='footer'>
+            <p>Todos los derechos Reservados</p>
+
         </div>
     )
 }
-
-export default Footer
